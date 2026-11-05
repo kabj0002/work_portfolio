@@ -1,0 +1,41 @@
+.project {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.project-link {
+	text-decoration: none;
+}
+
+.project_brand,
+.project_purpose {
+	/* display: flex;
+	align-items: flex-end; */
+}
+
+.project_purpose {
+}
+
+.separator {
+	color: var(--color-secondary-darker);
+}
+
+.project-title {
+	align-content: center;
+}
+
+.project img {
+	border-radius: 15px;
+	max-width: 600px;
+	height: auto;
+	width: 100%;
+}
+
+.skill_keyword {
+	color: var(--color-secondary-darker);
+	border: 2px solid var(--color-secondary-darker);
+	border-radius: 35px;
+	padding: 0.2rem 0.5rem;
+	width: fit-content;
+}

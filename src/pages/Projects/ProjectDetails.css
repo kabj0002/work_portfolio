@@ -1,0 +1,141 @@
+/* =========================
+   CASE STUDY
+========================= */
+
+.case-study {
+	justify-items: center;
+	gap: 2rem;
+}
+
+.case-study h1 {
+	text-align: center;
+}
+
+.case-study h1,
+.case-study h2,
+.case-study h3,
+.case-study h4,
+.case-study h5,
+.case-study-intro {
+	max-width: 800px;
+	margin-block: 1.5rem 1rem;
+}
+
+.case-study-intro {
+	font-size: clamp(1rem, 0.924vw + 0.761rem, 1.5rem);
+	line-height: clamp(1.1rem, 1.57vw + 0.694rem, 1.95rem);
+	font-weight: 500;
+	text-align: center;
+}
+
+/* Hver sektion med overskrift + indhold */
+.case-study-row {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap: 2rem;
+	align-items: start;
+	margin-block: 3rem;
+}
+
+/* Venstre kolonne */
+.case-study-row h4 {
+	position: sticky;
+	top: 100px;
+
+	align-self: start;
+	margin-top: 0;
+}
+
+/* Højre kolonne */
+.case-study-row > div {
+	min-width: 0;
+}
+
+.case-study-row h5 {
+	margin-block: 2rem 1rem;
+}
+
+.case-study-row p {
+	max-width: 800px;
+}
+
+.faktaboks {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+	.case-study-row {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+
+	.case-study-row h4 {
+		position: static;
+	}
+}
+
+/* =========================
+	DIVIDER, 3 varianter
+========================= */
+
+.pencil-divider {
+	position: relative;
+	width: 100%;
+	height: 8px;
+	margin: 3rem 0;
+	color: #555;
+}
+
+.pencil-divider::before,
+.pencil-divider::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: currentColor;
+	border-radius: 50%;
+}
+
+/* Variant 1 – dobbelt, let ujævn */
+.pencil-divider--1::before {
+	top: 3px;
+	height: 1px;
+	transform: rotate(-0.15deg);
+	opacity: 0.7;
+}
+
+.pencil-divider--1::after {
+	top: 5px;
+	height: 1px;
+	transform: rotate(0.2deg);
+	opacity: 0.35;
+}
+
+/* Variant 2 – enkelt, lidt tykkere */
+.pencil-divider--2::before {
+	top: 4px;
+	height: 2px;
+	transform: rotate(0.15deg);
+	opacity: 0.55;
+}
+
+/* Variant 3 – dobbelt, mere diskret */
+.pencil-divider--3::before {
+	top: 2px;
+	height: 1px;
+	transform: rotate(0.1deg);
+	opacity: 0.4;
+}
+
+.pencil-divider--3::after {
+	top: 6px;
+	height: 1px;
+	transform: rotate(-0.2deg);
+	opacity: 0.6;
+}

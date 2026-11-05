@@ -1,0 +1,108 @@
+.button-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	/* gap: 0.5rem; */
+
+	padding: 0.8rem 1.4rem;
+
+	border: 1px solid transparent;
+	border-radius: 8px;
+
+	font: inherit;
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	cursor: pointer;
+
+	box-shadow:
+		0 2px 4px rgb(0 0 0 / 4%),
+		0 6px 12px rgb(0 0 0 / 6%);
+
+	transition:
+		transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+		box-shadow 0.7s ease,
+		background-color 0.3s ease,
+		color 0.3s ease,
+		border-color 0.3s ease;
+}
+
+/* Standard */
+.button-link--standard {
+	background-color: var(--color-button-background);
+	color: var(--color-button-text);
+	border-color: var(--color-button-border);
+}
+
+/* CTA */
+.button-link--cta {
+	background-color: var(--color-button-cta-background);
+	color: var(--color-button-cta-text, #fff);
+	border-color: var(--color-button-cta-border);
+}
+
+/* Fælles Hover */
+.button-link:hover {
+	transform: translateY(-2px) scale(1.04);
+
+	box-shadow:
+		0 4px 8px rgb(0 0 0 / 5%),
+		0 12px 24px rgb(0 0 0 / 12%);
+}
+
+/* Standard hover */
+.button-link--standard:hover {
+	background-color: var(--color-button-hover-background);
+	color: var(--color-button-hover-text);
+	border-color: var(--color-button-hover-border);
+}
+
+/* CTA hover */
+.button-link--cta:hover {
+	background-color: var(--color-cta-hover-background);
+	color: var(--color-cta-hover-text);
+	border-color: var(--color-cta-hover-border);
+	gap: 0.5rem;
+}
+
+/* CTA-pil */
+.button-link--cta::after {
+	content: "↗";
+	display: inline-block;
+	flex-shrink: 0;
+	overflow: hidden;
+	max-width: 0;
+	opacity: 0;
+	white-space: nowrap;
+	transform: translateX(-4px);
+
+	transition:
+		max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+		opacity 0.3s ease,
+		transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Vis pilen ved hover eller tastaturfokus */
+.button-link--cta:hover::after,
+.button-link--cta:focus-visible::after {
+	max-width: 1em;
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* Tastatur-navigation */
+.button-link:focus-visible {
+	outline: 2px solid var(--color-button-focus);
+	outline-offset: 4px;
+}
+
+/* Respekter brugerens bevægelsesindstillinger */
+@media (prefers-reduced-motion: reduce) {
+	.button-link {
+		transition: none;
+	}
+
+	.button-link:hover {
+		transform: none;
+	}
+}

@@ -1,0 +1,306 @@
+/* Genanvendelig effekter */
+
+/* =========================
+   SCALE UTILITIES
+========================= */
+
+.scale-hover {
+	transition: scale 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scale-hover:hover {
+	scale: 1.08;
+}
+
+.scale-hover-sm {
+	transition: scale 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scale-hover-sm:hover {
+	scale: 1.03;
+}
+
+.scale-hover-lg {
+	transition: scale 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scale-hover-lg:hover {
+	scale: 1.12;
+}
+
+/* =========================
+   PAPER COLORS
+========================= */
+
+.paper-yellow {
+	background-color: #fff3a6;
+}
+
+.paper-pink {
+	background-color: #ffd6df;
+}
+
+.paper-blue {
+	background-color: #cce7f5;
+}
+
+.paper-green {
+	background-color: #d8edc5;
+}
+
+.paper-purple {
+	background-color: #e5d8f5;
+}
+
+.paper-orange {
+	background-color: #ffdfbd;
+}
+
+.paper-white {
+	background-color: #fff;
+}
+
+/* =========================
+   PAPER SIZES
+========================= */
+
+/* PADDING */
+
+.paper-sm {
+	padding: 32px;
+}
+
+.paper-md {
+	padding: 40px;
+}
+
+.paper-lg {
+	padding: 48px;
+}
+
+.paper-xl {
+	padding: 56px;
+}
+
+.post-it {
+	padding: 32px;
+
+	@media screen and (min-width: 768px) {
+		padding: 40px;
+	}
+
+	ul {
+		padding-left: 0;
+
+		@media screen and (min-width: 768px) {
+			padding-left: 32px;
+		}
+	}
+}
+
+.paper {
+	padding: 24px;
+
+	@media screen and (min-width: 768px) {
+		padding: 48px;
+	}
+
+	/* Virker ikke */
+	@media screen and (min-width: 1500px) {
+		width: 100%;
+		max-width: 1500px;
+		margin-inline: auto;
+	}
+}
+
+/* WIDTH */
+.paper-width-xs {
+	max-width: 300px;
+}
+
+.paper-width-sm {
+	max-width: 400px;
+}
+
+.paper-width-md {
+	max-width: 600px;
+}
+
+.paper-width-lg {
+	max-width: 800px;
+}
+
+/* =========================
+   PAPER ROTATIONS
+========================= */
+
+.rotate-1 {
+	@media screen and (min-width: 768px) {
+		transform: rotate(-2deg);
+	}
+}
+
+.rotate-2 {
+	@media screen and (min-width: 768px) {
+		transform: rotate(2deg);
+	}
+}
+
+.rotate-3 {
+	@media screen and (min-width: 768px) {
+		transform: rotate(-4deg);
+	}
+}
+
+.rotate-4 {
+	@media screen and (min-width: 768px) {
+		transform: rotate(4deg);
+	}
+}
+
+/* =========================
+   PAPER BASE
+========================= */
+
+.paper-base {
+	position: relative;
+	margin: 0px;
+	box-shadow:
+		0 2px 4px rgb(0 0 0 / 8%),
+		0 8px 16px rgb(0 0 0 / 12%);
+
+	@media screen and (min-width: 1023px) {
+		margin: 48px;
+	}
+}
+
+.paper-base-project {
+	position: relative;
+	margin: 24px;
+	box-shadow:
+		0 2px 4px rgb(0 0 0 / 8%),
+		0 8px 16px rgb(0 0 0 / 12%);
+
+	@media screen and (min-width: 1023px) {
+		margin: 48px;
+	}
+}
+
+/* =========================
+   PAPER TAPE
+========================= */
+.paper-tape::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	width: 80px;
+	height: 22px;
+	background: rgb(255 255 255 / 45%);
+	transform: translateX(-50%) rotate(-3deg);
+}
+
+/* =========================
+   PAPER PIN
+========================= */
+/* Thumbtack */
+.paper-pin {
+	position: relative;
+	overflow: visible;
+}
+
+.paper-pin::before,
+.paper-pin::after {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+}
+
+/* Pin head */
+.paper-pin::before {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+
+	background: var(--pin-color, #d85b55);
+
+	box-shadow:
+		inset -2px -2px 3px rgba(0, 0, 0, 0.2),
+		inset 2px 2px 3px rgba(255, 255, 255, 0.35),
+		1px 2px 3px rgba(0, 0, 0, 0.25);
+
+	z-index: 2;
+}
+
+/* Pin needle */
+.paper-pin::after {
+	width: 3px;
+	height: 20px;
+
+	background: linear-gradient(to right, #777, #ddd, #888);
+
+	z-index: 1;
+}
+
+/* Pin colors */
+.pin-red {
+	--pin-color: #d85b55;
+}
+
+.pin-blue {
+	--pin-color: #6c9ec9;
+}
+
+.pin-yellow {
+	--pin-color: #e5bd55;
+}
+
+.pin-green {
+	--pin-color: #83aa72;
+}
+
+.pin-purple {
+	--pin-color: #a38bc7;
+}
+
+/* Pin placements */
+/* Center */
+.pin-center::before {
+	top: -12px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.pin-center::after {
+	top: 2px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Left corner */
+.pin-left::before {
+	top: -10px;
+	left: 24px;
+	transform: rotate(-15deg);
+}
+
+.pin-left::after {
+	top: 3px;
+	left: 32px;
+	transform: rotate(-15deg);
+}
+
+/* Right corner */
+.pin-right::before {
+	top: -10px;
+	right: 24px;
+	left: auto;
+	transform: rotate(15deg);
+}
+
+.pin-right::after {
+	top: 3px;
+	right: 32px;
+	left: auto;
+	transform: rotate(15deg);
+}
