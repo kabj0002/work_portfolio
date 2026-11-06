@@ -6,7 +6,7 @@ function HairCreationsByGaia() {
 		<main>
 			<div className="post-it paper-base-project paper-pin pin-red pin-center paper-white">
 				OBS! Denne case study mangler billeder/illustrationer. Siden er under
-				udarbejdelse. Billeder tilføjes senest onsdag d. 11.11.26.
+				udarbejdelse. Billeder tilføjes senest fredag d. 13.11.26.
 			</div>
 			<section className="case-study paper-base-project paper-orange paper paper-pin pin-green pin-center">
 				<h1>Hair Creations by Gaia</h1>
@@ -130,8 +130,8 @@ function HairCreationsByGaia() {
 									krøller, som fylder meget i hendes billeder.
 								</p>
 								<p>
-									Jeg udviklede illustrationselementet, så det kunne genbruges
-									på både websitet og sociale medier. På den måde blev det et
+									Vi udviklede illustrationselementet, så det kunne genbruges på
+									både websitet og sociale medier. På den måde blev det et
 									gennemgående visuelt element, der binder hendes digitale
 									univers sammen.
 								</p>

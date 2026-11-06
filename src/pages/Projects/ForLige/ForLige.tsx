@@ -6,7 +6,7 @@ function ForLige() {
 		<main>
 			<div className="post-it paper-base-project paper-pin pin-red pin-center paper-white">
 				OBS! Denne case study mangler billeder/illustrationer. Siden er under
-				udarbejdelse. Billeder tilføjes senest onsdag d. 11.11.26.
+				udarbejdelse. Billeder tilføjes senest fredag d. 13.11.26.
 			</div>
 			<section className="case-study paper-base-project paper-blue paper paper-tape">
 				<h1>For Lige Vilkår</h1>

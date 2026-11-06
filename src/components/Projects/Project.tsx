@@ -25,16 +25,20 @@ function Project({
 	return (
 		<Link to={href} className="project-link">
 			<article className={`project ${className}`}>
-				<div className="flex-end">
+				<div className="project-meta">
 					<p className="project_purpose">{purpose}</p>
-					<span className="separator">•</span>
+					<span className="separator" aria-hidden="true">
+						•
+					</span>
 					<p className="project_brand">{brand}</p>
 				</div>
-				<h3 className="project-title">{title}</h3>
-				<div className="flex-nowrap">
-					<img src={image} alt={imageAlt} />
 
-					<div className="flex-center">
+				<h3 className="project-title">{title}</h3>
+
+				<div className="project-content">
+					<img className="project-image" src={image} alt={imageAlt} />
+
+					<div className="project-skills">
 						{keywords.map((keyword) => (
 							<p className="skill_keyword" key={keyword}>
 								{keyword}

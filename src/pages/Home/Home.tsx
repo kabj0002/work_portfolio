@@ -58,7 +58,7 @@ function Home() {
 
 				<div
 					id="unik"
-					className="story-card paper-pink paper-base rotate-2 paper-width-lg paper-lg paper-pin pin-yellow pin-center"
+					className="story-card paper-pink rotate-2 paper-width-lg paper-md paper-pin pin-yellow pin-center"
 				>
 					<h2>Min fortælling</h2>
 

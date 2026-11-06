@@ -1,4 +1,4 @@
-.project {
+/* .project {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
@@ -6,15 +6,6 @@
 
 .project-link {
 	text-decoration: none;
-}
-
-.project_brand,
-.project_purpose {
-	/* display: flex;
-	align-items: flex-end; */
-}
-
-.project_purpose {
 }
 
 .separator {
@@ -38,4 +29,163 @@
 	border-radius: 35px;
 	padding: 0.2rem 0.5rem;
 	width: fit-content;
+} */
+
+/* =================================
+   PROJECT CARD
+================================= */
+
+.project {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	width: 100%;
+	min-width: 0;
+}
+
+.project-link {
+	text-decoration: none;
+}
+
+/* =================================
+   BRAND + PURPOSE
+================================= */
+
+.project-meta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 0.5rem;
+}
+
+.project-meta p {
+	margin: 0;
+}
+
+/* =================================
+   TITLE
+================================= */
+
+.project-title {
+	margin: 0;
+}
+
+/* =================================
+   IMAGE + SKILLS
+================================= */
+
+.project-content {
+	display: grid;
+	grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+	align-items: start;
+	gap: 1.5rem;
+
+	min-width: 0;
+}
+
+.project-image {
+	display: block;
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	border-radius: 15px;
+	min-width: 0;
+}
+
+/* =================================
+   SKILLS
+================================= */
+
+.project-skills {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 0.5rem;
+
+	min-width: 0;
+	justify-content: center;
+	align-self: center;
+}
+
+.skill_keyword {
+	color: var(--color-secondary-darker);
+	border: 2px solid var(--color-secondary-darker);
+	border-radius: 35px;
+	padding: 0.2rem 0.5rem;
+	width: fit-content;
+	max-width: 100%;
+	margin: 0;
+	overflow-wrap: anywhere;
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media screen and (max-width: 900px) {
+	.project-content {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 1rem;
+	}
+
+	.project-image {
+		max-width: 100%;
+	}
+
+	.project-skills {
+		gap: 0.5rem;
+	}
+
+	.project-link {
+		h3 {
+			text-decoration: underline;
+		}
+	}
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media screen and (max-width: 600px) {
+	.project {
+		gap: 1rem;
+	}
+
+	.project-meta {
+		justify-content: flex-start;
+	}
+
+	.project-title {
+		overflow-wrap: anywhere;
+	}
+}
+
+/* =================================
+   PROJECT RESPONSIVE FIX
+================================= */
+
+/* Desktop: behold paper-margin */
+@media screen and (min-width: 1023px) {
+	.projects-layout .project {
+		width: calc(100% - 96px);
+		box-sizing: border-box;
+	}
+}
+
+/* Tablet: lidt ekstra plads til rotation */
+@media screen and (min-width: 601px) and (max-width: 1022px) {
+	.projects-layout .project-link {
+		width: 85%;
+	}
+}
+
+/* Mobil */
+@media screen and (max-width: 600px) {
+	.projects-layout .project {
+		width: 100%;
+		margin: 0;
+	}
 }

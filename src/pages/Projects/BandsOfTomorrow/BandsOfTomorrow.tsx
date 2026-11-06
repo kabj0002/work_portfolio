@@ -6,7 +6,7 @@ function BandsOfTomorrow() {
 		<main>
 			<div className="post-it paper-base-project paper-pin pin-red pin-center paper-white">
 				OBS! Denne case study mangler billeder/illustrationer. Siden er under
-				udarbejdelse. Billeder tilføjes senest onsdag d. 11.11.26.
+				udarbejdelse. Billeder tilføjes senest fredag d. 13.11.26.
 			</div>
 			<section className="case-study paper-base-project paper-pink paper paper-tape">
 				<h1>Bands of Tomorrow</h1>
@@ -86,9 +86,7 @@ function BandsOfTomorrow() {
 							<div>
 								<p>
 									Da jeg startede på projektet, havde jeg ingen erfaring med
-									CMS-systemer. Samtidig skulle jeg navigere i en eksisterende
-									kodebase, hvor jeg både skulle forstå den etablerede struktur
-									og videreudvikle den.
+									Payload CMS.
 								</p>
 								<h5>01 - En tydeligere informationsstruktur</h5>
 								<p>

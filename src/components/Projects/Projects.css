@@ -1,0 +1,56 @@
+/* =================================
+   PROJECTS LAYOUT
+================================= */
+
+.projects-layout {
+	display: flex;
+	flex-direction: column;
+	gap: clamp(2.5rem, 5vw, 4rem);
+
+	min-width: 0;
+	padding-inline: clamp(1rem, 3vw, 3rem);
+	box-sizing: border-box;
+}
+
+.projects-layout .project-link {
+	display: block;
+	min-width: 0;
+	box-sizing: border-box;
+}
+
+.projects-layout .project-link:nth-child(odd) {
+	align-self: flex-start;
+}
+
+.projects-layout .project-link:nth-child(even) {
+	align-self: flex-end;
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media screen and (max-width: 1020px) {
+	.projects-layout .project-link {
+		width: 90%;
+	}
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media screen and (max-width: 600px) {
+	.projects-layout {
+		gap: 2rem;
+	}
+
+	.projects-layout .project-link {
+		width: 100%;
+		align-self: center;
+	}
+
+	.projects-layout .project {
+		transform: none;
+	}
+}

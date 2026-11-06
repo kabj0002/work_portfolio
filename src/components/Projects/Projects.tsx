@@ -2,6 +2,7 @@ import projectTwoImage from "../../assets/images/bot.png";
 import projectOneImage from "../../assets/images/forlige.png";
 import projectThreeImage from "../../assets/images/gaia.png";
 import Project from "./Project";
+import "./Projects.css";
 
 function Projects() {
 	return (
