@@ -88,6 +88,7 @@
 
 .post-it {
 	padding: 32px;
+	max-width: 1500px;
 
 	@media screen and (min-width: 768px) {
 		padding: 40px;
@@ -186,7 +187,7 @@
 		0 8px 16px rgb(0 0 0 / 12%);
 
 	@media screen and (min-width: 1023px) {
-		margin: 48px;
+		margin: 48px auto;
 	}
 }
 

@@ -5,4 +5,5 @@
 	box-shadow:
 		0 2px 4px rgb(0 0 0 / 8%),
 		0 8px 16px rgb(0 0 0 / 12%);
+	max-width: 1500px;
 }
