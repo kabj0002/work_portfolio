@@ -53,7 +53,7 @@ function Projects() {
 					href="/projects/haircreationsbygaia"
 					brand="Hair Creations by Gaia"
 					purpose="Projektleder & Frontendudvikler"
-					title="Definere visuel identitet og utvikle digitalt univers"
+					title="Definere visuel identitet og udvikle digitalt univers"
 					image={projectThreeImage}
 					imageAlt="Screenshot af Projekt Hair Creations by Gaia"
 					keywords={[

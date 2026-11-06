@@ -152,7 +152,7 @@
 	height: 2px;
 	margin: 0;
 
-	background: currentColor;
+	background: var(--color-tertiary-darker);
 	border-radius: 2px;
 
 	transform-origin: center;
