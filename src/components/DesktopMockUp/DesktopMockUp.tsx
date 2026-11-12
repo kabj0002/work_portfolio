@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./desktopmockup.css";
+import "./DesktopMockUp.css";
 
 type DesktopMockupProps = {
 	alt?: string;
