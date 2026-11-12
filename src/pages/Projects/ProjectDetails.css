@@ -145,3 +145,24 @@
 	transform: rotate(-0.2deg);
 	opacity: 0.6;
 }
+
+.illustation-div {
+	max-width: 800px;
+	@media (min-width: 768px) {
+		display: flex;
+	}
+}
+
+.illustration-div-col {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+}
+
+.illustrations-content-variations {
+	display: flex;
+	flex-direction: column;
+	margin-block: 24px;
+	gap: 1rem;
+	max-width: 800px;
+}

@@ -1,13 +1,13 @@
+import GaiaImg1 from "../../../assets/images/gaia-1.png";
+import GaiaVideo from "../../../assets/videos/gaia-desktop.mp4";
 import ButtonLink from "../../../components/ButtonLink/ButtonLink";
+import DesktopMockup from "../../../components/DesktopMockUp/DesktopMockUp";
+
 import "../ProjectDetails.css";
 
 function HairCreationsByGaia() {
 	return (
 		<main>
-			<div className="post-it paper-base-project paper-pin pin-red pin-center paper-white">
-				OBS! Denne case study mangler billeder/illustrationer. Siden er under
-				udarbejdelse. Billeder tilføjes senest fredag d. 13.11.26.
-			</div>
 			<section className="case-study paper-base-project paper-orange paper paper-pin pin-green pin-center">
 				<h1>Hair Creations by Gaia</h1>
 				<p>UX/UI · Frontend Development · Digital Brand Identity</p>
@@ -135,6 +135,7 @@ function HairCreationsByGaia() {
 									gennemgående visuelt element, der binder hendes digitale
 									univers sammen.
 								</p>
+								<DesktopMockup video={GaiaVideo} />
 
 								<h5>03 - Fra design til responsiv frontend</h5>
 								<p>
@@ -155,6 +156,8 @@ function HairCreationsByGaia() {
 									muligt at generere produktsider ud fra data frem for at
 									oprette hver side manuelt.
 								</p>
+								<DesktopMockup image={GaiaImg1} alt="Supabase" />
+
 								<p>
 									Jeg havde desuden fokus på, at komponenter og layouts
 									fungerede på tværs af skærmstørrelser, så brugeroplevelsen
@@ -181,7 +184,7 @@ function HairCreationsByGaia() {
 						</div>
 						<div className="pencil-divider pencil-divider--3" />
 						<div className="case-study-row">
-							<h4>Resultatet</h4>
+							<h4>Resultat & læring</h4>
 							<div>
 								<p>
 									Resultatet blev et samlet digitalt univers, der kombinerer

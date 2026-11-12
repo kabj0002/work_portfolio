@@ -33,7 +33,7 @@ function Projects() {
 					href="/projects/bandsoftomorrow"
 					brand="Bands of Tomorrow"
 					purpose="Projektleder & Frontendudvikler"
-					title="Redesign og udvikling af et digitalt musikmedie"
+					title="Redesign af et digitalt musikmedie"
 					image={projectTwoImage}
 					imageAlt="Screenshot af Projekt Bands of Tomorrow"
 					keywords={[
@@ -53,7 +53,7 @@ function Projects() {
 					href="/projects/haircreationsbygaia"
 					brand="Hair Creations by Gaia"
 					purpose="Projektleder & Frontendudvikler"
-					title="Definere visuel identitet og udvikle digitalt univers"
+					title="Digitalt univers til en personlig frisørbrand"
 					image={projectThreeImage}
 					imageAlt="Screenshot af Projekt Hair Creations by Gaia"
 					keywords={[

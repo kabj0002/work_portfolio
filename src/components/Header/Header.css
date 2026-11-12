@@ -1,12 +1,6 @@
-/* .header {
-	background-color: white;
-	padding-top: 2rem;
-}
-.subheader {
-	margin: 0 auto;
-} */
-
-/* Header */
+/* =========================
+   HEADER
+========================= */
 
 .header {
 	width: 100%;
@@ -19,18 +13,27 @@
 	backdrop-filter: blur(12px);
 }
 
+.nav-outer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .nav {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
 
-/* Navigation links */
+/* =========================
+   NAVIGATION LINKS
+========================= */
 
 .nav-links {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
+
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -41,7 +44,7 @@
 	color: inherit;
 	font-family: var(--font-body);
 	font-size: 1rem;
-	transition: opacity 0.2s ease;
+	transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
@@ -49,19 +52,15 @@
 	text-decoration: underline;
 }
 
-/* Navigation links */
+/* Main navigation links */
 
 .nav-links > li > a {
 	position: relative;
 	display: inline-block;
 	padding: 0.4rem 0.7rem;
-	text-decoration: none;
-	color: inherit;
 }
 
-/* Active link */
-
-/* Slightly hand-drawn variation */
+/* Active navigation link */
 
 .nav-links > li > a.active {
 	position: relative;
@@ -92,45 +91,125 @@
 	pointer-events: none;
 }
 
-/* Projects dropdown */
+/* =========================
+   PROJECTS DROPDOWN
+========================= */
 
 .projects {
 	position: relative;
 }
+
+.projects-header {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+/* Arrow button */
+
+.dropdown-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: none;
+	border: none;
+	padding: 0.4rem;
+
+	color: inherit;
+	cursor: pointer;
+
+	transition: transform 0.25s ease;
+}
+
+.dropdown-toggle.open {
+	transform: rotate(180deg);
+}
+
+/* Dropdown menu */
 
 .dropdown {
 	position: absolute;
 	top: 100%;
 	right: 0;
 
-	min-width: 180px;
-	padding: 0.75rem 0;
+	min-width: 240px;
+	max-width: 320px;
+
+	display: none;
+	flex-direction: column;
+	gap: 0.5rem;
+
+	margin: 0;
+	padding: 0.75rem;
 
 	background: white;
-	border-radius: 8px;
+	border-radius: 12px;
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 
 	list-style: none;
-	display: none;
 }
+
+.dropdown.open {
+	display: flex;
+}
+
+/* Dropdown links */
 
 .dropdown li a {
-	display: inline-block;
-	padding: 0.75rem 1rem;
-	white-space: nowrap;
-}
-
-/* Show dropdown on hover and keyboard focus */
-
-.projects:hover .dropdown,
-.projects:focus-within .dropdown {
 	display: block;
+	position: relative;
+
+	width: fit-content;
+	max-width: 100%;
+
+	padding: 0.6rem 0.75rem;
+
+	white-space: normal;
+	overflow-wrap: anywhere;
+	line-height: 1.4;
 }
 
-/* Burger menu */
+/* Active project */
+
+.dropdown li a.active {
+	position: relative;
+	z-index: 2;
+}
+
+/* Hand-drawn project outline */
+
+.dropdown li a.active::after {
+	content: "";
+	position: absolute;
+	inset: -3px -5px;
+
+	border: 2px solid var(--color-tertiary-darker);
+	border-radius: 20px 24px 18px 22px;
+
+	transform: rotate(-1deg);
+	pointer-events: none;
+}
+
+.dropdown li a.active::before {
+	content: "";
+	position: absolute;
+	inset: -1px -3px;
+
+	border: 1px solid var(--color-tertiary-darker);
+	border-radius: 24px 18px 22px 20px;
+
+	transform: rotate(1deg);
+	pointer-events: none;
+}
+
+/* =========================
+   BURGER MENU
+========================= */
 
 .burger {
 	display: none;
+
 	background: none;
 	border: none;
 	padding: 0;
@@ -174,7 +253,7 @@
 	top: 18px;
 }
 
-/* Active: X */
+/* Active burger: X */
 
 .burger.active span:nth-child(1) {
 	top: 11px;
@@ -190,17 +269,32 @@
 	transform: rotate(-45deg);
 }
 
-/* Mobile */
+/* =========================
+   KEYBOARD FOCUS
+========================= */
+
+.dropdown-toggle:focus-visible,
+.burger:focus-visible {
+	outline: 2px solid var(--color-tertiary-darker);
+	outline-offset: 4px;
+}
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 768px) {
 	.nav {
 		justify-content: flex-end;
 	}
 
+	/* Burger */
+
 	.burger {
 		display: block;
-		z-index: 101;
 	}
+
+	/* Main navigation */
 
 	.nav-links {
 		display: none;
@@ -222,60 +316,28 @@
 		display: flex;
 	}
 
-	/* Projects links are always visible on mobile */
+	/* Projects header */
+
+	.projects-header {
+		width: fit-content;
+	}
+
+	/* Mobile dropdown */
 
 	.dropdown {
-		display: flex;
-		flex-direction: column;
 		position: static;
+
+		min-width: 0;
+		max-width: 100%;
 
 		box-shadow: none;
 		background: transparent;
+
 		padding: 0.75rem 0 0 1rem;
 		gap: 0.75rem;
 	}
 
 	.dropdown li a {
-		padding: 0;
+		padding: 0.5rem 0.75rem;
 	}
-
-	.projects:hover .dropdown,
-	.projects:focus-within .dropdown {
-		display: flex;
-	}
-}
-
-/* Dropdown links */
-.dropdown li a {
-	display: inline-block;
-	position: relative;
-	width: fit-content;
-	padding: 0.75rem 1rem;
-}
-
-/* Aktivt projekt */
-.dropdown li a.active {
-	position: relative;
-	z-index: 2;
-}
-
-/* Håndtegnet cirkel */
-.dropdown li a.active::after {
-	content: "";
-	position: absolute;
-	inset: -4px -8px;
-	border: 2px solid var(--color-tertiary-darker);
-	border-radius: 48% 52% 45% 55% / 55% 45% 55% 45%;
-	transform: rotate(-5deg);
-	pointer-events: none;
-}
-
-.dropdown li a.active::before {
-	content: "";
-	position: absolute;
-	inset: -2px -6px;
-	border: 1px solid var(--color-tertiary-darker);
-	border-radius: 53% 47% 56% 44% / 46% 54% 43% 57%;
-	transform: rotate(3deg);
-	pointer-events: none;
 }

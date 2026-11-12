@@ -1,13 +1,13 @@
+import BotImg1 from "../../../assets/images/bot-1.png";
+import BotImg2 from "../../../assets/images/bot-2.png";
+
 import ButtonLink from "../../../components/ButtonLink/ButtonLink";
+import DesktopMockup from "../../../components/DesktopMockUp/DesktopMockUp";
 import "../ProjectDetails.css";
 
 function BandsOfTomorrow() {
 	return (
 		<main>
-			<div className="post-it paper-base-project paper-pin pin-red pin-center paper-white">
-				OBS! Denne case study mangler billeder/illustrationer. Siden er under
-				udarbejdelse. Billeder tilføjes senest fredag d. 13.11.26.
-			</div>
 			<section className="case-study paper-base-project paper-pink paper paper-tape">
 				<h1>Bands of Tomorrow</h1>
 				<p>Frontend Development · UX · Payload CMS</p>
@@ -15,7 +15,7 @@ function BandsOfTomorrow() {
 					Redesign af en digital musikplatform med fokus på brugeroplevelse,
 					visuel identitet og teknisk implementering.
 				</p>
-				<div className="faktaboks paper-base-project paper-blue post-it rotate-4 paper-pin pin-yellow pin-center">
+				<div className="faktaboks paper-base-project paper-blue post-it rotate-2 paper-pin pin-yellow pin-center">
 					<h3>Fakta</h3>
 					<ul>
 						<li>Min rolle: Projektplanlægger og frontendudvikler</li>
@@ -105,7 +105,6 @@ function BandsOfTomorrow() {
 									synlig for at understøtte organisationens ønske om at
 									tiltrække flere frivillige.
 								</p>
-
 								<h5>02 - Fra Figma til kode</h5>
 								<p>
 									Jeg havde hovedansvaret for frontendimplementeringen og
@@ -118,39 +117,58 @@ function BandsOfTomorrow() {
 									at skabe en sammenhængende visuel oplevelse på tværs af
 									hjemmesidens sider og interaktioner.
 								</p>
-
-								<h5>03 - En ny koncertoplevelse</h5>
-								<p>
-									Som en del af den nye informationsstruktur udviklede vi en
-									koncertkalender med en oversigt over kommende koncerter, som
-									Bands of Tomorrow kunne anbefale deres læsere.
-								</p>
-								<p>
-									Kalenderen blev en selvstændig del af platformen, der gjorde
-									det lettere at opdage kommende musikoplevelser og skabte en ny
-									måde at formidle musikrelateret indhold på.
-								</p>
-								<h5>04 - Teknisk kvalitetssikring</h5>
-								<p>
-									Jeg stod for den tekniske kvalitetssikring gennem
-									Lighthouse-tests, der analyserede performance, accessibility,
-									best practices og SEO.
-								</p>
-								<p>
-									Testene identificerede blandt andet udfordringer med
-									kontraster, tilgængelige navne på knapper og enkelte
-									performance-relaterede forbedringsmuligheder.
-								</p>
-								<p>
-									På baggrund af rapporterne implementerede jeg relevante
-									rettelser, og efterfølgende viste Lighthouse forbedrede
-									resultater inden for performance, SEO og best practices.
-								</p>
+								<div className="illustration-div-col">
+									<div>
+										<h5>03 - En ny koncertoplevelse</h5>
+										<p>
+											Som en del af den nye informationsstruktur udviklede vi en
+											koncertkalender med en oversigt over kommende koncerter,
+											som Bands of Tomorrow kunne anbefale deres læsere.
+										</p>
+										<p>
+											Kalenderen blev en selvstændig del af platformen, der
+											gjorde det lettere at opdage kommende musikoplevelser og
+											skabte en ny måde at formidle musikrelateret indhold på.
+										</p>
+									</div>
+									<DesktopMockup image={BotImg1} alt="Koncertkalender" />
+								</div>
+								<div className="illustration-div-col">
+									<div>
+										<h5>04 - Teknisk kvalitetssikring</h5>
+										<p>
+											Jeg stod for den tekniske kvalitetssikring gennem
+											Lighthouse-tests, der analyserede performance,
+											accessibility, best practices og SEO.
+										</p>
+										<p>
+											Testene identificerede blandt andet udfordringer med
+											kontraster, tilgængelige navne på knapper og enkelte
+											performance-relaterede forbedringsmuligheder.
+										</p>
+										<p>
+											På baggrund af rapporterne implementerede jeg relevante
+											rettelser, hvilket resulterede i forbedrede scores inden
+											for performance, SEO og best practices.
+										</p>
+										<p>
+											Accessibility blev ligeledes undersøgt og forbedret, men
+											på grund af projektets korte tidsramme blev området ikke
+											fuldt optimeret. Testresultaterne synliggjorde derfor
+											yderligere forbedringspotentiale, særligt inden for
+											kontraster og tilgængelige navne på interaktive elementer.
+										</p>
+									</div>
+									<DesktopMockup
+										image={BotImg2}
+										alt="Lighthouse test resultat"
+									/>
+								</div>
 							</div>
 						</div>
 						<div className="pencil-divider pencil-divider--3" />
 						<div className="case-study-row">
-							<h4>Resultatet</h4>
+							<h4>Resultat & læring</h4>
 							<div>
 								<p>
 									Projektet resulterede i en ny digital platform for Bands of
@@ -168,6 +186,12 @@ function BandsOfTomorrow() {
 									UX og projektledelse i et tværfagligt udviklingsforløb, hvor
 									både brugeroplevelse, teknisk kvalitet og samarbejde var
 									afgørende for resultatet.
+								</p>
+								<p>
+									Resultaterne understregede samtidig vigtigheden af at
+									prioritere accessibility tidligt i udviklingsprocessen, så
+									tilgængelighed indgår som en løbende del af kvalitetssikringen
+									frem for en afsluttende optimering.
 								</p>
 							</div>
 						</div>

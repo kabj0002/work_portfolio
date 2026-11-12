@@ -8,7 +8,6 @@ function Footer() {
 				<div className="footer-content">
 					<h5>Ønsker du at komme i kontakt?</h5>
 					<p>Email: katinka_hbjerke@hotmail.com</p>
-					<p>Mobil: +45 42336477</p>
 				</div>
 				<div className="flex-col footer-content">
 					<h5>Find mig på LinkedIn</h5>

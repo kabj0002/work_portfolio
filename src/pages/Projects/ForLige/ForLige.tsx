@@ -1,13 +1,13 @@
 import ButtonLink from "../../../components/ButtonLink/ButtonLink";
 import "../ProjectDetails.css";
+import forligeImg1 from "../../../assets/images/forlige-1.png";
+import forligeImg2 from "../../../assets/images/forlige-2.png";
+import forligeVideo from "../../../assets/videos/forlige-mobile.mp4";
+import MobileMockup from "../../../components/MobileMockup/MobileMockup";
 
 function ForLige() {
 	return (
 		<main>
-			<div className="post-it paper-base-project paper-pin pin-red pin-center paper-white">
-				OBS! Denne case study mangler billeder/illustrationer. Siden er under
-				udarbejdelse. Billeder tilføjes senest fredag d. 13.11.26.
-			</div>
 			<section className="case-study paper-base-project paper-blue paper paper-tape">
 				<h1>For Lige Vilkår</h1>
 				<p>Frontend Development · Drupal CMS</p>
@@ -93,41 +93,54 @@ function ForLige() {
 									videreudvikle eksisterende kode.
 								</p>
 
-								<h5>02 - Genanvendelige ribbons og content variations</h5>
-								<p>
-									Hjemmesidens designsystem var opbygget omkring forskellige
-									ribbons, som hver havde deres specifikke formål og
-									indholdstype.
-								</p>
-								<p>
-									Jeg arbejdede med implementeringen af blandt andet Hero
-									Ribbons, Campaign Ribbons, Text Ribbons, Media Ribbons og List
-									Ribbons.
-								</p>
-								<p>
-									For at gøre løsningen fleksibel udviklede jeg forskellige
-									content variations, hvor redaktøren eksempelvis kunne vælge
-									mellem forskellige baggrundsfarver, tilhørende tekst- og
-									knapfarver samt alternative layouts med centreret, venstre-
-									eller højrestillet indhold.
-								</p>
-								<p>
-									På den måde kunne organisationen sammensætte indhold på tværs
-									af hjemmesiden, samtidig med at det visuelle udtryk forblev
-									konsistent.
-								</p>
-								<h5>03 - Udvikling af den mobile oplevelse</h5>
-								<p>
-									Desktopdesignet var udleveret i Figma, men mobilversionen
-									skulle udvikles fra bunden.
-								</p>
-								<p>
-									Jeg tog derfor selv ansvar for at tilpasse layouts, indhold og
-									funktioner til mindre skærme. Et eksempel var CTA-knappen,
-									hvor jeg foreslog en fixed placering i bunden af skærmen
-									kombineret med en scroll-animation, der gjorde knappen
-									tilgængelig uden at fylde unødigt under navigation.
-								</p>
+								<div>
+									<h5>02 - Genanvendelige ribbons og content variations</h5>
+									<p>
+										Hjemmesidens designsystem var opbygget omkring forskellige
+										ribbons, som hver havde deres specifikke formål og
+										indholdstype.
+									</p>
+									<p>
+										Jeg arbejdede med implementeringen af blandt andet Hero
+										Ribbons, Campaign Ribbons, Text Ribbons, Media Ribbons og
+										List Ribbons.
+									</p>
+									<p>
+										For at gøre løsningen fleksibel udviklede jeg forskellige
+										content variations, hvor redaktøren eksempelvis kunne vælge
+										mellem forskellige baggrundsfarver, tilhørende tekst- og
+										knapfarver samt alternative layouts med centreret, venstre-
+										eller højrestillet indhold.
+									</p>
+									<p>
+										På den måde kunne organisationen sammensætte indhold på
+										tværs af hjemmesiden, samtidig med at det visuelle udtryk
+										forblev konsistent.
+									</p>
+								</div>
+								<div className="illustrations-content-variations">
+									<img src={forligeImg1} alt="Content variation 1" />
+									<img src={forligeImg2} alt="Content Variation 2" />
+								</div>
+
+								<div className="illustation-div">
+									<div>
+										<h5>03 - Udvikling af den mobile oplevelse</h5>
+										<p>
+											Desktopdesignet var udleveret i Figma, men mobilversionen
+											skulle udvikles fra bunden.
+										</p>
+										<p>
+											Jeg tog derfor selv ansvar for at tilpasse layouts,
+											indhold og funktioner til mindre skærme. Et eksempel var
+											CTA-knappen, hvor jeg foreslog en fixed placering i bunden
+											af skærmen kombineret med en scroll-animation, der gjorde
+											knappen tilgængelig uden at fylde unødigt under
+											navigation.
+										</p>
+									</div>
+									<MobileMockup video={forligeVideo} />
+								</div>
 								<h5>04 - Tilgængelighed som en del af udviklingsprocessen</h5>
 								<p>
 									Jeg arbejdede løbende med tilgængelighed gennem Chrome
@@ -146,7 +159,7 @@ function ForLige() {
 						</div>
 						<div className="pencil-divider pencil-divider--3" />
 						<div className="case-study-row">
-							<h4>Resultatet</h4>
+							<h4>Resultat & læring</h4>
 							<div>
 								<p>
 									Resultatet blev en responsiv hjemmeside med en fleksibel
