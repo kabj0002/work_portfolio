@@ -1,5 +1,5 @@
 import "./Polaroid.css";
-import profileImg from "../../assets/profile.jpeg";
+import profileImg from "../../assets/images/profile.webp";
 
 function Polaroid() {
 	return (

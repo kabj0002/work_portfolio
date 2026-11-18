@@ -1,7 +1,7 @@
 import ButtonLink from "../../../components/ButtonLink/ButtonLink";
 import "../ProjectDetails.css";
-import forligeImg1 from "../../../assets/images/forlige-1.png";
-import forligeImg2 from "../../../assets/images/forlige-2.png";
+import forligeImg1 from "../../../assets/images/forlige-1.webp";
+import forligeImg2 from "../../../assets/images/forlige-2.webp";
 import forligeVideo from "../../../assets/videos/forlige-mobile.mp4";
 import MobileMockup from "../../../components/MobileMockup/MobileMockup";
 

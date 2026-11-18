@@ -1,6 +1,6 @@
-import projectTwoImage from "../../assets/images/bot.png";
-import projectOneImage from "../../assets/images/forlige.png";
-import projectThreeImage from "../../assets/images/gaia.png";
+import projectTwoImage from "../../assets/images/bot.webp";
+import projectOneImage from "../../assets/images/forlige.webp";
+import projectThreeImage from "../../assets/images/gaia.webp";
 import Project from "./Project";
 import "./Projects.css";
 

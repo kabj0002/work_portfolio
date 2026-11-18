@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
-import background from "../../assets/images/board.jpg";
-import backgroundTop from "../../assets/images/wood.jpg";
+import background from "../../assets/images/board.webp";
+import backgroundTop from "../../assets/images/wood.webp";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import "./Layout.css";

@@ -1,5 +1,5 @@
-import BotImg1 from "../../../assets/images/bot-1.png";
-import BotImg2 from "../../../assets/images/bot-2.png";
+import BotImg1 from "../../../assets/images/bot-1.webp";
+import BotImg2 from "../../../assets/images/bot-2.webp";
 
 import ButtonLink from "../../../components/ButtonLink/ButtonLink";
 import DesktopMockup from "../../../components/DesktopMockUp/DesktopMockUp";
