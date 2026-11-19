@@ -31,7 +31,10 @@ function BandsOfTomorrow() {
 						</li>
 						<li>Projekt: Afsluttende studieprojekt · 4. semester</li>
 					</ul>
-					<ButtonLink href="https://mmd-4sem-eksamen.vercel.app/" variant="cta">
+					<ButtonLink
+						href="https://bands-of-tomorrow-eksamen-web.vercel.app/"
+						variant="cta"
+					>
 						Jeg vil se sitet
 					</ButtonLink>
 				</div>
