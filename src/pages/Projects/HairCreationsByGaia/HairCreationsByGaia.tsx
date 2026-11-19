@@ -1,4 +1,4 @@
-import GaiaImg1 from "../../../assets/images/gaia-1.png";
+import GaiaImg1 from "../../../assets/images/gaia-1.webp";
 import GaiaVideo from "../../../assets/videos/gaia-desktop.mp4";
 import ButtonLink from "../../../components/ButtonLink/ButtonLink";
 import DesktopMockup from "../../../components/DesktopMockUp/DesktopMockUp";
