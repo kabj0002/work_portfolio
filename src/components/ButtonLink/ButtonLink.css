@@ -4,7 +4,7 @@
 	justify-content: center;
 	/* gap: 0.5rem; */
 
-	padding: 0.8rem 1.4rem;
+	padding: 0.8rem 1.2rem;
 
 	border: 1px solid transparent;
 	border-radius: 8px;
@@ -105,4 +105,8 @@
 	.button-link:hover {
 		transform: none;
 	}
+}
+
+.cv-download-button {
+	gap: 0.3rem;
 }

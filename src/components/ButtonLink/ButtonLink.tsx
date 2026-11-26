@@ -5,6 +5,7 @@ import "./ButtonLink.css";
 type ButtonLinkProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & {
 	href: string;
 	variant?: "standard" | "cta";
+	download?: boolean | string;
 };
 
 function ButtonLink({
@@ -12,6 +13,7 @@ function ButtonLink({
 	variant = "standard",
 	className = "",
 	children,
+	download,
 	...props
 }: ButtonLinkProps) {
 	const classes = `button-link button-link--${variant} ${className}`.trim();
@@ -20,6 +22,15 @@ function ButtonLink({
 	if (href.startsWith("#")) {
 		return (
 			<a href={href} className={classes} {...props}>
+				{children}
+			</a>
+		);
+	}
+
+	// Download link
+	if (download !== undefined && download !== false) {
+		return (
+			<a href={href} className={classes} download={download} {...props}>
 				{children}
 			</a>
 		);

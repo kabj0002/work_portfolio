@@ -69,11 +69,11 @@ function Header() {
 							</a>
 						</li>
 
-						<li>
+						{/* <li>
 							<NavLink to="/MitCV" end onClick={closeMenu}>
 								CV
 							</NavLink>
-						</li>
+						</li> */}
 
 						{/* Projects */}
 						<li className="projects">

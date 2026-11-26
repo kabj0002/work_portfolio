@@ -1,6 +1,7 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import Polaroid from "../../components/Polaroid/Polaroid";
 import "./Home.css";
+import { FiDownload } from "react-icons/fi";
 import Projects from "../../components/Projects/Projects";
 
 function Home() {
@@ -20,8 +21,13 @@ function Home() {
 					<ButtonLink href="#unik" variant="standard">
 						Hvad gør mig unik
 					</ButtonLink>
-					<ButtonLink href="/mitcv" variant="standard">
-						Læs mit CV
+					<ButtonLink
+						href="/CV_katinkahb.pdf"
+						download="katinka-bjerke-cv.pdf"
+						variant="standard"
+						className="cv-download-button"
+					>
+						Download mit CV <FiDownload aria-hidden="true" />
 					</ButtonLink>
 					<ButtonLink href="#mine-projekter" variant="cta">
 						Mine projekter
